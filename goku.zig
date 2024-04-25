@@ -17,4 +17,10 @@ pub fn main() !void {
     };
     std.debug.print("{s}'s power is {d} at the age of {d}\n", .{ local_user.name, local_user.power, local_user.age });
     std.debug.print("Max power is {d}\n", .{MAX_POWER});
+
+    // call diagnosis on user
+    local_user.diagnose();
+
+    // same as
+    User.diagnose(local_user);
 }
