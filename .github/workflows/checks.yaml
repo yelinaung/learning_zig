@@ -1,3 +1,5 @@
+# Action used
+# https://github.com/marketplace/actions/setup-zig
 name: checks
 
 on:
