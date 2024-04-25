@@ -15,6 +15,9 @@ pub fn main() !void {
         .power = 9001,
         .name = "Goku",
     };
+    // this won't work because user is a 'const'
+    // local_user.age = 29;
+
     std.debug.print("{s}'s power is {d} at the age of {d}\n", .{ local_user.name, local_user.power, local_user.age });
     std.debug.print("Max power is {d}\n", .{MAX_POWER});
 
